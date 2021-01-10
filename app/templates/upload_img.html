@@ -1,0 +1,39 @@
+{% extends 'basic.html' %}
+
+{% block body %}
+
+{% load crispy_forms_tags %}
+
+<form method="POST" , enctype="multipart/form-data">
+	{%csrf_token%}
+	<div class="container">
+
+        {% comment %} {{ form.name|as_crispy_field }} {% endcomment %}
+
+    <div class="form-row">
+	<div class="form-group col-md-6 mb-0">
+        {{ form.title|as_crispy_field }}
+   </div>
+ 
+      <div class="form-group col-md-6 mb-0">
+        {{ form.head1|as_crispy_field }}
+      </div>
+    </div>
+	   <div class="form-row">
+      <div class="form-group col-md-6 mb-0">
+        {{ form.chead1|as_crispy_field }}
+      </div>
+       <div class="form-group col-md-6 mb-0">
+        {{ form.tags|as_crispy_field }}
+      </div>
+       <div class="form-group col-md-6 mb-0">
+        {{ form.pub_date|as_crispy_field }}
+      </div>
+    </div>
+	  {{ form.image|as_crispy_field }}
+ 
+    <button type="submit" class="btn btn-primary">Upload Image</button>
+	</div>
+</form>
+  
+{%endblock%}
