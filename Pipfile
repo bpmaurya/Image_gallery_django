@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+asgiref = "==3.3.1"
+beautifulsoup4 = "==4.9.3"
+django-bootstrap4 = "==2.3.1"
+django-ckeditor = "==6.0.0"
+django-crispy-forms = "==1.10.0"
+django-js-asset = "==1.2.2"
+pytz = "==2020.5"
+soupsieve = "==2.1"
+sqlparse = "==0.4.1"
+Django = "==3.1.5"
+Pillow = "==8.1.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
